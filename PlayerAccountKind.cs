@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace YourGameServer.Interface // Unity cannot accpect 'namespace YourProjectName.Models;' yet
+namespace YourGameServer.Interface // Unity cannot accpect 'namespace YourProjectName.Interface;' yet
 {
 
     public enum PlayerAccountKind
