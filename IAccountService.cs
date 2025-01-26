@@ -13,7 +13,7 @@ namespace YourGameServer.Interface // Unity cannot accpect 'namespace YourProjec
         /// </summary>
         /// <param name="signup"></param>
         /// <returns></returns>
-        UnaryResult<SignInRequestResult> SignUp(SignInRequest signup);
+        UnaryResult<SignUpRequestResult> SignUp(SignUpRequest signup);
 
         /// <summary>
         /// 

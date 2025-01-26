@@ -5,7 +5,7 @@ using MessagePack;
 namespace YourGameServer.Interface // Unity cannot accpect 'namespace YourProjectName.Interface;' yet
 {
     [MessagePackObject]
-    public record SignInRequest
+    public record SignUpRequest
     {
         [Key(0)]
         public DeviceType DeviceType { get; init; }
@@ -15,7 +15,7 @@ namespace YourGameServer.Interface // Unity cannot accpect 'namespace YourProjec
     }
 
     [MessagePackObject]
-    public record SignInRequestResult
+    public record SignUpRequestResult
     {
         [Key(0)]
         public ulong Id { get; init; }
