@@ -1,6 +1,6 @@
 #nullable disable
 
-namespace YourGameServer.Game.Interface // Unity cannot accpect 'namespace YourProjectName.Interface;' yet
+namespace YourGameServer.Game.Interface // Unity cannot use file-scope namespace yet
 {
     public enum DeviceType
     {

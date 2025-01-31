@@ -1,7 +1,7 @@
 #nullable disable
 using MessagePack;
 
-namespace YourGameServer.Game.Interface // Unity cannot accpect 'namespace YourProjectName.Interface;' yet
+namespace YourGameServer.Game.Interface // Unity cannot use file-scope namespace yet
 {
     [MessagePackObject]
     public record IconBlob
