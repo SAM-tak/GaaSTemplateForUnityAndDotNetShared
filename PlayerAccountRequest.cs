@@ -1,7 +1,6 @@
 #nullable disable
 using System; // Unity needs this
 using MessagePack;
-using YourGameServer.Shared.Models;
 
 namespace YourGameServer.Game.Interface // Unity cannot accpect 'namespace YourProjectName.Interface;' yet
 {
