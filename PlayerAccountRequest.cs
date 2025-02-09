@@ -16,7 +16,7 @@ namespace YourGameServer.Game.Interface // Unity cannot use file-scope namespace
     public record MaskedPlayerAccount
     {
         [Key(0)]
-        public ulong Id { get; init; }
+        public string Code { get; init; }
         [Key(1)]
         public DateTime? LastLogin { get; init; }
         [Key(2)]
@@ -27,16 +27,14 @@ namespace YourGameServer.Game.Interface // Unity cannot use file-scope namespace
     public record FormalPlayerAccount
     {
         [Key(0)]
-        public ulong Id { get; init; }
-        [Key(1)]
         public string Code { get; init; }
-        [Key(2)]
+        [Key(1)]
         public PlayerAccountStatus Status { get; init; }
-        [Key(3)]
+        [Key(2)]
         public DateTime? Since { get; init; }
-        [Key(4)]
+        [Key(3)]
         public DateTime? LastLogin { get; init; }
-        [Key(5)]
+        [Key(4)]
         public FormalPlayerProfile Profile { get; init; }
     }
 
@@ -44,16 +42,14 @@ namespace YourGameServer.Game.Interface // Unity cannot use file-scope namespace
     public record FormalPlayerProfile
     {
         [Key(0)]
-        public ulong Id { get; init; }
+        public string OwnerCode { get; set; }
         [Key(1)]
-        public ulong OwnerId { get; set; }
-        [Key(2)]
         public DateTime? LastUpdate { get; set; }
-        [Key(3)]
+        [Key(2)]
         public string Name { get; set; }
-        [Key(4)]
+        [Key(3)]
         public string Motto { get; set; }
-        [Key(5)]
+        [Key(4)]
         public ulong IconBlobId { get; set; }
     }
 

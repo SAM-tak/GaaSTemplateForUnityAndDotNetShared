@@ -9,6 +9,7 @@ namespace YourGameServer.Game.Interface // Unity cannot use file-scope namespace
     public interface IPlayerAccountService : IService<IPlayerAccountService>
     {
         UnaryResult<FormalPlayerAccount> GetPlayerAccount();
-        UnaryResult<IEnumerable<MaskedPlayerAccount>> GetPlayerAccounts(ulong[] ids);
+        UnaryResult<IEnumerable<MaskedPlayerAccount>> GetPlayerAccounts(string[] codes);
+        UnaryResult<IEnumerable<MaskedPlayerAccount>> FindPlayerAccounts(int maxCount);
     }
 }

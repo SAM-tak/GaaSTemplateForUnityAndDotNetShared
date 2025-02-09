@@ -8,7 +8,7 @@ namespace YourGameServer.Game.Interface // Unity cannot use file-scope namespace
     public record LogInRequest
     {
         [Key(0)]
-        public ulong Id { get; set; }
+        public string Code { get; init; }
         [Key(1)]
         public DeviceType DeviceType { get; set; }
         [Key(2)]
@@ -21,10 +21,8 @@ namespace YourGameServer.Game.Interface // Unity cannot use file-scope namespace
     public record LogInRequestResult
     {
         [Key(0)]
-        public string Code { get; init; }
-        [Key(1)]
         public string Token { get; init; }
-        [Key(2)]
+        [Key(1)]
         public DateTime Period { get; init; }
     }
 }
