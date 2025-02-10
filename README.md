@@ -1,0 +1,1 @@
+I realize how that was just a snobbish silly idea it was to store shared class definitions for the server and Unity in the same repository and reference them as submodules instead of simply copying them.
